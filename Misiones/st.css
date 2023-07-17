@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+/*Estilos para el encabezado*/
+.container .btn-menu{
+    float: left;
+    line-height:100px;
+    margin-left: 50PX;
+
+    
+}
+.container .btn-menu label{
+
+color: black;
+font-size: 30px;
+cursor: pointer;
+position: absolute;
+top: -20px;
+right: 20px;
+    
+}
+.logo h1{
+color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+    
+}
+.container-menu{
+position: absolute;
+    background: rgba(0,0,0,0.5);
+width: 100%;
+height: 100vh;
+    top: 0;left: 0;
+transition: all 500ms ease;
+opacity: 0;
+visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+opacity: 1;
+visibility: visible;
+}
+.cont-menu{
+width: 100%;
+max-width: 250px;
+background: #1c1c1c;
+height: 100vh;
+position: relative;
+transition: all 500ms ease;
+transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+transform: translateX(0%);
+}
+.cont-menu nav{
+transform: translateY(15%);
+}
+.cont-menu nav img {
+display: block;
+    margin: 0%; /* Centra la imagen horizontalmente */
+    max-width: 90%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Ajusta la altura de la imagen de forma proporcional */
+    margin-left: 10px;
+
+}
+.cont-menu nav a{
+display: block;
+text-decoration: none;
+padding: 20px;
+color: #c7c7c7;
+border-left: 5px solid transparent;
+transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+border-left: 5px solid #c7c7c7;
+background: #1f1f1f;
+}
+.cont-menu label{
+position: absolute;
+right: 5px;
+top: 10px;
+color: #fff;
+cursor: pointer;
+font-size: 18px;
+}
+
+
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+button[type="submit"] {
+    background-color: #00D12E;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 150px;
+}
+
+button[type="submit"]:hover {
+    background-color: #00D12E;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+button[type="submit"]:active {
+    background-color: #00D12E;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
